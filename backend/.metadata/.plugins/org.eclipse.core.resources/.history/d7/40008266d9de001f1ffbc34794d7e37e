@@ -1,0 +1,21 @@
+package com.app.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity(name = "Users")
+@Data
+@Getter
+@Setter
+@NoArgsConstructor
+public class User {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int userID;
+	@Column(name = "UserName")
+	private String userName;
+	@Column(name = "ProjectId")
+	private int projectId;
+
+}
