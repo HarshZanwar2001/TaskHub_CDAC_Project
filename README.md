@@ -19,7 +19,8 @@ TaskHub is a comprehensive task management application developed using **React, 
 
 ## Screenshots
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](![image](https://github.com/user-attachments/assets/3a875aa1-72be-4735-b9a5-0bd2efab9d1d)
+)
 ![Task Management](screenshots/tasks.png)
 ![Meeting Interface](screenshots/meeting.png)
 
