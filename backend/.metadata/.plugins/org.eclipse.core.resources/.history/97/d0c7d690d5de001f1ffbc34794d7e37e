@@ -1,9 +1,0 @@
-package com.app.entity;
-
-public class User {
-	
-	private int userID;
-	private String userName;
-	private int projectId;
-
-}
