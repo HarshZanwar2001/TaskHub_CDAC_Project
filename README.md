@@ -75,7 +75,7 @@ cd taskhub
    ```
 3. Start the React app:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Usage
