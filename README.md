@@ -15,7 +15,7 @@ TaskHub is a comprehensive task management application developed using **React, 
 - **Frontend**: React, Redux, Tailwind CSS
 - **Backend**: Spring Boot, Java
 - **Database**: MySQL
-- **Meeting Integration**: Custom WebRTC-based solution
+- **Meeting Integration**: Dyte SDK
 
 ## Screenshots
 
