@@ -13,10 +13,10 @@ import AcceptInvitation from "./pages/Project/AcceptInvitation";
 import Subscription from "./pages/subscription/Subscription";
 import UpgradeSuccess from "./pages/subscription/UpgradeSuccess";
 import { getUserSubscription } from "./redux/Subscription/Action";
-import Meeting from "./components/meeting";
+import Meeting from "./components/MeetingComponents";
 import About from "./components/about";
 import Help from "./components/help";
-
+import MeetingPage from "./components/MeetingPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -26,9 +26,9 @@ function App() {
     dispatch(getUserSubscription(auth.jwt || localStorage.getItem("jwt")))
   }, [auth.jwt]);
 
+  
   return (
     <>
-      
       {auth.loading?<Loader/> : auth.user ? (
         <>
           <Navbar />
@@ -46,7 +46,7 @@ function App() {
             ></Route>
             <Route path="/upgrade_plan" element={<Subscription />}></Route>
             <Route path="/upgrade_plan/success" element={<UpgradeSuccess />}></Route>
-            <Route path="/meeting" element={<Meeting />} />
+            <Route path="/meeting" element={<MeetingPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/help" element={<Help />} />
           </Routes>
@@ -57,5 +57,4 @@ function App() {
     </>
   );
 }
-
 export default App;
